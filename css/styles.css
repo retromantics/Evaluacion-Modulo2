@@ -22,3 +22,13 @@ header{
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     border-color: #007bff;
 }
+@media (hover: hover) and (pointer: fine) {
+  .card.threat-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card.threat-hover:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-color: #007bff;
+  }
+}
