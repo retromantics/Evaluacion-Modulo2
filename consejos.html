@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -57,7 +59,8 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Usa contraseñas seguras</h5>
-                                <p class="card-text">Combina letras, números y símbolos. Evita usar la misma en diferentes sitios.</p>
+                                <p class="card-text">Combina letras, números y símbolos. Evita usar la misma en
+                                    diferentes sitios.</p>
                             </div>
                         </div>
                     </div>
@@ -69,7 +72,8 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Actualiza tu software</h5>
-                                <p class="card-text">Instala las actualizaciones para corregir errores de seguridad en tus dispositivos.</p>
+                                <p class="card-text">Instala las actualizaciones para corregir errores de seguridad en
+                                    tus dispositivos.</p>
                             </div>
                         </div>
                     </div>
@@ -81,31 +85,142 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Evita redes WiFi públicas</h5>
-                                <p class="card-text">Usa VPN o evita compartir información sensible cuando estés en redes abiertas.</p>
+                                <p class="card-text">Usa VPN o evita compartir información sensible cuando estés en
+                                    redes abiertas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Controles -->
-                <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselConsejos" data-bs-slide="prev">
+                <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselConsejos"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselConsejos" data-bs-slide="next">
+                <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselConsejos"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
         </div>
     </section>
 
-    
+    <!-- Formulario de contacto -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Si tienes dudas , Contáctanos !!!</h2>
+            <form id="contactoForm" class="mx-auto" style="max-width:600px;">
+                <input type="text" class="form-control mb-3" id="nombre" name="nombre" placeholder="Nombre" required
+                    minlength="3">
+                <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Email" required>
+                <textarea class="form-control mb-3" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required
+                    minlength="10"></textarea>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar </button>
+                </div>
+            </form>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none text-center">
+                ¡Gracias por contactarnos! Te responderemos pronto.
+            </div>
+        </div>
+    </section>
+
+    <!-- Test de Seguridad -->
+    <div class="text-center my-4">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTestSeguridad">
+            Hacer Test de Seguridad
+        </button>
+    </div>
+    <!-- Modal Test de Seguridad -->
+    <div class="modal fade" id="modalTestSeguridad" tabindex="-1" aria-labelledby="modalTestSeguridadLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <form id="formTestSeguridad">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTestSeguridadLabel">Test de Seguridad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Pregunta 1 -->
+                        <div class="mb-4">
+                            <p class="fw-bold mb-2">1. ¿Con qué frecuencia cambias tus contraseñas?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p1" id="p1a" value="a" required>
+                                <label class="form-check-label" for="p1a">Cada 3-6 meses</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p1" id="p1b" value="b">
+                                <label class="form-check-label" for="p1b">Una vez al año</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p1" id="p1c" value="c">
+                                <label class="form-check-label" for="p1c">Solo cuando me obligan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p1" id="p1d" value="d">
+                                <label class="form-check-label" for="p1d">Nunca</label>
+                            </div>
+                        </div>
+                        <!-- Pregunta 2 -->
+                        <div class="mb-4">
+                            <p class="fw-bold mb-2">2. ¿Qué haces si recibes un correo sospechoso?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p2" id="p2a" value="a" required>
+                                <label class="form-check-label" for="p2a">Lo reporto y no hago clic en enlaces</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p2" id="p2b" value="b">
+                                <label class="form-check-label" for="p2b">Lo abro para ver de qué se trata</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p2" id="p2c" value="c">
+                                <label class="form-check-label" for="p2c">Reenvío a mis contactos</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p2" id="p2d" value="d">
+                                <label class="form-check-label" for="p2d">Lo ignoro</label>
+                            </div>
+                        </div>
+                        <!-- Pregunta 3 -->
+                        <div class="mb-4">
+                            <p class="fw-bold mb-2">3. ¿Utilizas autenticación en dos pasos (2FA)?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p3" id="p3a" value="a" required>
+                                <label class="form-check-label" for="p3a">Siempre que puedo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p3" id="p3b" value="b">
+                                <label class="form-check-label" for="p3b">Solo en cuentas importantes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p3" id="p3c" value="c">
+                                <label class="form-check-label" for="p3c">No sé qué es</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="p3" id="p3d" value="d">
+                                <label class="form-check-label" for="p3d">Nunca</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Enviar respuestas</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </form>
+                <div id="testResult" class="alert alert-info m-3 d-none text-center"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-light text-center py-4">
         <div class="container">
             <p class="m-0">© 2025 CiberSeguridad</p>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
